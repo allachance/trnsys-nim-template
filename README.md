@@ -1,6 +1,6 @@
 # TRNSYS Nim Template
 
-This template provides you a way for building custom TRNSYS 18 DLL components using the [Nim](https://nim-lang.org/) language. It provides a working Type implementation, TRNSYS bindings, and a build script.
+This template provides a way for building custom TRNSYS 18 DLL components using the [Nim](https://nim-lang.org/) language. It provides a working Type implementation, TRNSYS bindings, and a build script.
 
 ## Requirements
 
