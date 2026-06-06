@@ -1,0 +1,17 @@
+/build/
+
+nimcache/
+nimblecache/
+htmldocs/
+.htnim
+
+nimble.develop
+nimble.paths
+nimbledeps
+
+*.obj
+*.o
+*.exp
+*.lib
+*.pdb
+*.ilk
