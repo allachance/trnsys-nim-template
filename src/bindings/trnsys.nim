@@ -76,6 +76,11 @@ proc updateReportIntegral*(index: ptr cint, intVal: ptr cdouble) {.cdecl, import
 proc updateReportMinMax*(index: ptr cint, newVal: ptr cdouble) {.cdecl, importc: "UPDATEREPORTMINMAX".}
 proc typeck*(IOPT: ptr cint, info: ptr cint, ni, np, nd: ptr cint) {.cdecl, importc: "TYPECK".}
 
+proc getListingFileLogicalUnit*(): cint {.cdecl, importc: "TRNSYSFUNCTIONS_mp_GETLISTINGFILELOGICALUNIT".}
+proc getLUFileNameCpp*(i: ptr cint, LUfilePath: cstring, pathLen: csize_t): cint {.cdecl, importc: "TRNSYSFUNCTIONS_mp_GETLUFILENAME_CPP".}
+proc logicalUnitIsOpen*(i: ptr cint): cint {.cdecl, importc: "TRNSYSFUNCTIONS_mp_LOGICALUNITISOPEN".}
+proc closeFileIVF*(lu: ptr cint): cint {.cdecl, importc: "TRNSYSFUNCTIONS_mp_CLOSEFILEIVF".}
+
 # ------------------------------------------------------------
 # TRNSYS subroutines
 # ------------------------------------------------------------
