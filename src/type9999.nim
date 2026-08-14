@@ -87,7 +87,7 @@ proc TYPE9999() {.cdecl, exportc: "TYPE9999", dynlib.} =
   # RE-READ PARAMETERS
   #---------------------------------------------------------
   if getIsReReadParameters() != 0:
-    return
+    discard
 
   # -------------------------------------------------------
   # MAIN CODE
